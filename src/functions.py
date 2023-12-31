@@ -46,29 +46,29 @@ def after_of_operations():
     return last_5_list_of_operations
 
 
-def slices_by_operation(check_and_kard):
-    to_operation = (check_and_kard[-16:-12] + " " + check_and_kard[-12:-10] +
-                    '** **** ' + check_and_kard[-4:])
+def slices_by_operation(check_and_card):
+    to_operation = (check_and_card[-16:-12] + " " + check_and_card[-12:-10] +
+                    '** **** ' + check_and_card[-4:])
 
-    if "Maestro" in check_and_kard:
+    if "Maestro" in check_and_card:
         to_operation = "Maestro " + to_operation
 
-    elif "МИР" in check_and_kard:
+    elif "МИР" in check_and_card:
         to_operation = "МИР " + to_operation
 
-    elif "Visa Classic" in check_and_kard:
+    elif "Visa Classic" in check_and_card:
         to_operation = "Visa Classic " + to_operation
 
-    elif "Visa Platinum" in check_and_kard:
+    elif "Visa Platinum" in check_and_card:
         to_operation = "Visa Platinum " + to_operation
 
-    elif "Visa Gold" in check_and_kard:
+    elif "Visa Gold" in check_and_card:
         to_operation = "Visa Gold " + to_operation
 
-    elif "MasterCard" in check_and_kard:
+    elif "MasterCard" in check_and_card:
         to_operation = "MasterCard " + to_operation
 
-    elif "Счет" in check_and_kard:
-        to_operation = check_and_kard[0:5] + '**' + check_and_kard[-4:]
+    elif "Счет" in check_and_card:
+        to_operation = check_and_card[0:5] + '**' + check_and_card[-4:]
 
     return to_operation
